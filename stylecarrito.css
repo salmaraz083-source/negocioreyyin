@@ -3,48 +3,49 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: beige;
+  font-size: 18px;           /* base grande */
 }
 
 /* HEADER */
 header.titulo {
   background-color: rgb(16, 19, 102);
-  padding: 24px;
+  padding: 28px;
   text-align: center;
 }
 
 header.titulo .h1 {
   color: beige;
   margin: 0;
-  font-size: 1.8rem;   /* más grande */
+  font-size: 2.2rem;         /* MUY grande */
 }
 
 /* NAV */
 a.navegador {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 24px;
+  border-radius: 30px;
   display: inline-block;
   background-color: cadetblue;
   text-decoration: none;
   color: white;
-  padding: 10px 22px;   /* más gordito */
-  margin: 12px 16px;
-  font-size: 1rem;
+  padding: 12px 26px;
+  margin: 16px 18px;
+  font-size: 1.2rem;         /* botón bien grande */
 }
 
-/* ALERTAS (grandes y centradas) */
+/* ALERTAS */
 p.alert {
   color: red;
-  font-size: 2.2rem;
+  font-size: 2.6rem;         /* enorme */
   text-align: center;
-  margin: 12px 10px 0;
+  margin: 16px 10px 4px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p.alerta {
   color: red;
-  font-size: 1.2rem;
+  font-size: 1.5rem;         /* grande */
   text-align: center;
-  margin: 6px 15px 18px;
+  margin: 6px 18px 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -53,49 +54,49 @@ p.alerta {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  padding: 0 18px 22px;
+  padding: 0 20px 24px;
 }
 
 /* TARJETA RESUMEN CARRITO */
 .resumen-carrito {
   width: 100%;
-  max-width: 650px;
-  padding: 20px;
+  max-width: 700px;          /* más ancho */
+  padding: 22px;
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,.18);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.22);
 }
 
 .resumen-carrito p {
-  margin-bottom: 10px;
-  font-size: 1.1rem;     /* texto más grande */
+  margin-bottom: 12px;
+  font-size: 1.4rem;         /* texto grande */
 }
 
 .resumen-carrito h3 {
-  margin: 14px 0 10px;
-  font-size: 1.3rem;
+  margin: 16px 0 12px;
+  font-size: 1.6rem;         /* título grande */
 }
 
 #lista-productos {
-  margin-left: 20px;
-  margin-bottom: 14px;
-  font-size: 1.05rem;
+  margin-left: 24px;
+  margin-bottom: 16px;
+  font-size: 1.3rem;
 }
 
 #lista-productos li {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 /* BOTÓN ENVIAR WSP */
 #btn-enviar-wsp {
-  padding: 10px 22px;
+  padding: 12px 26px;
   border-radius: 999px;
   border: none;
-  background: #25d366; /* color WhatsApp */
+  background: #25d366;
   color: white;
   font-weight: bold;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 #btn-enviar-wsp:hover {
@@ -105,22 +106,22 @@ p.alerta {
 /* CONTENEDOR TARJETAS DE PAGO */
 .contenedor-productos {
   display: flex;
-  flex-direction: column;  /* mobile: una debajo de otra */
+  flex-direction: column;   /* mobile: una debajo de otra */
   justify-content: center;
   align-items: center;
-  gap: 22px;
-  margin: 14px auto 28px;
-  padding: 0 18px 24px;
+  gap: 24px;
+  margin: 18px auto 32px;
+  padding: 0 20px 28px;
 }
 
 /* CARD GENÉRICA */
 .card {
   width: 100%;
-  max-width: 320px;         /* más ancha en celus */
+  max-width: 360px;          /* BIEN ancha en celu */
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,.18);
-  padding: 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.22);
+  padding: 20px;
   text-align: center;
 }
 
@@ -128,35 +129,35 @@ p.alerta {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .card h3 {
-  font-size: 1.25rem;
-  margin: 10px 0;
+  font-size: 1.6rem;         /* título GRANDE */
+  margin: 10px 0 8px;
 }
 
 .card p {
-  font-size: 1rem;
-  margin: 5px 0;
+  font-size: 1.3rem;         /* datos grandes (alias, CVU, etc) */
+  margin: 6px 0;
 }
 
 .card .precio {
   font-weight: bold;
-  font-size: 1.05rem;
+  font-size: 1.3rem;
 }
 
-/* BOTONES DENTRO DE .card (ej: pagar) */
+/* BOTONES DENTRO DE .card (Pagar) */
 .card button {
-  margin-top: 10px;
-  padding: 10px 22px;
+  margin-top: 12px;
+  padding: 12px 26px;
   border-radius: 999px;
   border: none;
-  background: #0070ba;  /* estilo Mercado Pago */
+  background: #0070ba;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .card button:hover {
@@ -165,12 +166,16 @@ p.alerta {
 
 /* --------- ESCRITORIO / PANTALLAS GRANDES --------- */
 @media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
   header.titulo .h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .main {
-    padding-top: 24px;
+    padding-top: 26px;
   }
 
   .contenedor-productos {
@@ -179,6 +184,6 @@ p.alerta {
   }
 
   .card {
-    width: 280px;
+    max-width: 320px;
   }
 }
