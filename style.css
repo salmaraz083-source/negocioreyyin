@@ -1,1 +1,135 @@
+/* ===== ESTILO GENERAL ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: beige;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+header.titulo {
+  background-color: rgb(16, 19, 102);
+  padding: 16px;
+}
+
+h1.h1 {
+  margin: 0;
+  text-align: center;
+  color: beige;
+}
+
+/* ===== NAV ===== */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+a.ofertas,
+a.promos {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  display: inline-block;
+  background-color: cadetblue;
+  text-decoration: none;
+  color: white;
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+/* ===== TARJETA TIENDA ===== */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.tienda {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* logo tienda */
+.img-tienda {
+  max-width: 100%;
+  height: auto;
+}
+
+/* botón tienda */
+a.button-tienda {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  display: inline-block;
+  background-color: cadetblue;
+  padding: 10px 24px;
+  color: rgb(45, 1, 1);
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+/* ===== CARRUSEL ===== */
+.carrucel {
+  width: 100%;
+  max-width: 100%;
+  margin: 16px auto;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f7f7f7;
+}
+
+.carrucel img {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  border-radius: 8px;
+  height: 120px;        /* más chico para móvil */
+  width: auto;
+}
+
+/* scroll bar opcional */
+.carrucel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carrucel::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.2);
+  border-radius: 4px;
+}
+
+/* ===== FOOTER ===== */
+.pie {
+  height: 40px;
+}
+
+/* ===== MEDIA QUERIES (ajustes para pantallas chicas) ===== */
+@media (max-width: 600px) {
+  a.ofertas,
+  a.promos {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+
+  .tienda {
+    padding: 16px;
+  }
+
+  a.button-tienda {
+    width: 100%;
+  }
+}
 
