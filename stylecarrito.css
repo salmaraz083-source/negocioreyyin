@@ -1,1 +1,172 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FONDO GENERAL */
+body {
+  background-color: beige;
+  color: #222;
+}
+
+/* HEADER */
+header.titulo {
+  background-color: rgb(16, 19, 102);
+  padding: 20px;
+  text-align: center;
+}
+
+header.titulo .h1 {
+  color: beige;
+  margin: 0;
+}
+
+/* NAV */
+nav {
+  background: #1e3aa3;
+  padding: 8px 15px;
+}
+
+a.navegador {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  display: inline-block;
+  background-color: cadetblue;
+  text-decoration: none;
+  color: white;
+  padding: 6px 16px;
+  font-size: 0.9rem;
+}
+
+/* ALERTAS */
+.alert {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: crimson;
+  font-size: 1.1rem;
+}
+
+.alerta {
+  text-align: center;
+  margin: 5px 15px 15px;
+  font-size: 0.9rem;
+}
+
+/* CONTENEDOR MAIN */
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* RESUMEN DEL CARRITO */
+.resumen-carrito {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  margin-bottom: 20px;
+}
+
+.resumen-carrito p {
+  margin-bottom: 6px;
+}
+
+.resumen-carrito h3 {
+  margin: 10px 0 8px;
+}
+
+#lista-productos {
+  margin-left: 18px;
+  margin-bottom: 12px;
+}
+
+#lista-productos li {
+  margin-bottom: 4px;
+}
+
+/* BOTÓN ENVIAR WSP */
+#btn-enviar-wsp {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: none;
+  background: #25d366; /* estilo WhatsApp */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn-enviar-wsp:hover {
+  opacity: 0.9;
+}
+
+/* TARJETAS DE PAGO */
+.contenedor-productos {
+  max-width: 900px;
+  margin: 0 auto 25px;
+  padding: 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin-bottom: 4px;
+}
+
+/* Botón pagar dentro de la tarjeta */
+.card button {
+  margin-top: 8px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: none;
+  background: #0070ba; /* estilo Mercado Pago */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card button:hover {
+  opacity: 0.9;
+}
+
+/* ------- VERSIÓN ESCRITORIO ------- */
+@media (min-width: 768px) {
+  .main {
+    padding-top: 20px;
+  }
+
+  .contenedor-productos {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .card {
+    width: 280px;
+  }
+}
 
