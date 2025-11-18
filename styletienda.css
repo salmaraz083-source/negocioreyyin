@@ -1,1 +1,87 @@
+body{background-color: beige;}
+header.titulo{
+    background-color:rgb(16, 19, 102);
+    padding: 30px;
+    }
+    h1.h1{
+    margin-left: 50%;
+    color: beige;
+}
+a.navegador{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+   display: inline-block;
+  background-color:cadetblue;
+  text-decoration: none;
+   color:white;
+    padding: 5px 5%;
+}
+.contenedor{
+  display: flex;
+  justify-content: center; /* centra las dos tarjetas */
+  gap: 20px;               /* separación entre tarjetas */
+  margin-top: 40px;
+}
+
+.tienda, .tienda1{
+    
+  max-width: 200px;
+  background-color:white;
+  padding: 0px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+.contenedor-productos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;          /* separación entre productos */
+  margin-top: 40px;
+}
+
+.card {
+  width: 220px;       /* ancho fijo para que el texto no se desplace */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+  padding: 16px;
+  text-align: center; /* TODO centrado */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.card .precio {
+  font-weight: bold;
+  font-size: 16px;
+}
+.buscador {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#buscar {
+  width: 60%;
+  max-width: 400px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
 
