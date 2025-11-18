@@ -9,7 +9,7 @@
 /* FONDO GENERAL */
 body {
   background-color: beige;
-  color: #222;
+  color: beige;
 }
 
 /* HEADER */
@@ -37,7 +37,7 @@ a.navegador {
   background-color: cadetblue;
   text-decoration: none;
   color: white;
-  padding: 6px 16px;
+  padding: 20px 16px;
   font-size: 0.9rem;
 }
 
