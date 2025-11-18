@@ -14,7 +14,7 @@ header.titulo {
 }
 
 header.titulo .h1 {
-  color: beige;
+  color:beige;
   margin: 0;
   font-size: 5rem;             /* título ENORME x3 */
 }
