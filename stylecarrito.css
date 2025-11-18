@@ -1,51 +1,51 @@
-/* GENERAL: base enorme */
+/* GENERAL: base brutalmente grande */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: beige;
-  font-size: 26px;             /* base gigante */
+  font-size: 40px;             /* base gigante x3 */
 }
 
 /* HEADER */
 header.titulo {
   background-color: rgb(16, 19, 102);
-  padding: 40px;
+  padding: 60px;
   text-align: center;
 }
 
 header.titulo .h1 {
   color: beige;
   margin: 0;
-  font-size: 3.2rem;           /* título ENORME */
+  font-size: 5rem;             /* título ENORME x3 */
 }
 
 /* NAV */
 a.navegador {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 40px;
+  border-radius: 60px;
   display: inline-block;
   background-color: cadetblue;
   text-decoration: none;
   color: white;
-  padding: 18px 40px;          /* botón grandote */
-  margin: 24px 20px 10px;
-  font-size: 2rem;
+  padding: 30px 70px;          /* botón gigante x3 */
+  margin: 40px 30px 20px;
+  font-size: 3.2rem;
 }
 
 /* ALERTAS */
 p.alert {
   color: red;
-  font-size: 3.4rem;           /* “ATENCIÓN” gigantesco */
+  font-size: 5rem;             /* ATENCIÓN gigante x3 */
   text-align: center;
-  margin: 20px 10px 8px;
+  margin: 30px 10px 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p.alerta {
   color: red;
-  font-size: 2.2rem;           /* texto grande */
+  font-size: 3.2rem;           /* texto grande x3 */
   text-align: center;
-  margin: 8px 20px 24px;
+  margin: 12px 30px 40px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -53,50 +53,50 @@ p.alerta {
 .main {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  padding: 0 24px 30px;
+  margin-top: 40px;
+  padding: 0 40px 50px;
 }
 
 /* TARJETA RESUMEN CARRITO */
 .resumen-carrito {
   width: 100%;
-  max-width: 900px;            /* bien ancho */
-  padding: 30px;
+  max-width: 1200px;           /* bien ancho */
+  padding: 40px;
   background: #fff;
-  border-radius: 30px;
-  box-shadow: 0 6px 18px rgba(0,0,0,.28);
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
 }
 
 .resumen-carrito p {
-  margin-bottom: 18px;
-  font-size: 2.2rem;           /* texto gigante */
+  margin-bottom: 26px;
+  font-size: 3.2rem;           /* texto mega grande */
 }
 
 .resumen-carrito h3 {
-  margin: 22px 0 16px;
-  font-size: 2.6rem;
+  margin: 30px 0 20px;
+  font-size: 3.8rem;           /* Detalle de productos */
 }
 
 #lista-productos {
-  margin-left: 30px;
-  margin-bottom: 18px;
-  font-size: 2.1rem;
+  margin-left: 40px;
+  margin-bottom: 26px;
+  font-size: 3rem;
 }
 
 #lista-productos li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 /* BOTÓN ENVIAR WSP */
 #btn-enviar-wsp {
-  padding: 18px 40px;
+  padding: 26px 60px;
   border-radius: 999px;
   border: none;
   background: #25d366;
   color: white;
   font-weight: bold;
   cursor: pointer;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
 }
 
 #btn-enviar-wsp:hover {
@@ -109,19 +109,19 @@ p.alerta {
   flex-direction: column;      /* en celu: una debajo de otra */
   justify-content: center;
   align-items: center;
-  gap: 32px;
-  margin: 24px auto 40px;
-  padding: 0 24px 32px;
+  gap: 40px;
+  margin: 40px auto 60px;
+  padding: 0 40px 50px;
 }
 
 /* CARD GENÉRICA */
 .card {
   width: 100%;
-  max-width: 460px;            /* MUY ancha en celu */
+  max-width: 650px;            /* bien ancha en celu */
   background: #fff;
-  border-radius: 30px;
-  box-shadow: 0 6px 18px rgba(0,0,0,.28);
-  padding: 26px;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  padding: 40px;
   text-align: center;
 }
 
@@ -129,35 +129,35 @@ p.alerta {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 
 .card h3 {
-  font-size: 2.6rem;
-  margin: 12px 0 10px;
+  font-size: 3.6rem;
+  margin: 16px 0 14px;
 }
 
 .card p {
-  font-size: 2.1rem;           /* alias, CVU bien grandes */
-  margin: 8px 0;
+  font-size: 3rem;             /* alias, CVU, etc grandísimos */
+  margin: 10px 0;
 }
 
 .card .precio {
   font-weight: bold;
-  font-size: 2.1rem;
+  font-size: 3rem;
 }
 
 /* BOTONES DENTRO DE .card (Pagar) */
 .card button {
-  margin-top: 16px;
-  padding: 18px 40px;
+  margin-top: 20px;
+  padding: 26px 60px;
   border-radius: 999px;
   border: none;
   background: #0070ba;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
 }
 
 .card button:hover {
@@ -167,15 +167,15 @@ p.alerta {
 /* --------- ESCRITORIO / PANTALLAS GRANDES --------- */
 @media (min-width: 768px) {
   body {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   header.titulo .h1 {
-    font-size: 3.4rem;
+    font-size: 5.2rem;
   }
 
   .main {
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
   .contenedor-productos {
@@ -184,6 +184,6 @@ p.alerta {
   }
 
   .card {
-    max-width: 420px;
+    max-width: 550px;
   }
 }
