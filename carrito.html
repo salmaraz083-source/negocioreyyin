@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito</title>
+  <link rel="stylesheet" href="stylecarrito.css">
+</head>
+<body>
+  <header class="titulo">
+    <h1 class="h1">Carrito de compras</h1>
+  </header>
+
+  <nav>
+    <a class="navegador" href="tienda.html">⬅ Volver a la tienda</a>
+  </nav>
+
+  <p class="alert">ATENCIÓN!!!</p>
+  <p class="alerta">
+    Primero envianos los detalles de la compra antes de pagar, ¡así confirmamos tu pago!
+  </p>
+
+  <main>
+    <!-- Resumen del carrito -->
+    <div class="main">
+      <div class="resumen-carrito">
+        <p>Productos en el carrito: <span id="cant"></span></p>
+        <p>Total a pagar: $<span id="tot"></span></p>
+        <h3>Detalle de productos:</h3>
+        <ul id="lista-productos"></ul>
+        <button id="btn-enviar-wsp">Enviar detalles</button>
+      </div>
+    </div>
+
+    <!-- Medios de pago -->
+    <div class="contenedor-productos">
+      <!-- Tarjeta Mercado Pago -->
+      <div class="card">
+        <img src="mercado pago.png" alt="Mercado Pago">
+        <h3>Pagá con Mercado Pago</h3>
+        <a href="http://link.mercadopago.com.ar/eolia" target="_blank" rel="noopener">
+          <button>Pagar</button>
+        </a>
+      </div>
+
+      <!-- Tarjeta otras billeteras -->
+      <div class="card">
+        <h3>Otras billeteras virtuales</h3>
+        <p><strong>Alias:</strong> costilla.s.e</p>
+        <p><strong>CVU:</strong> 0000003100050393166966</p>
+        <p><strong>Titular:</strong> Ester Silvia Costilla</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const cantidad = localStorage.getItem("carritoCantidad") || 0;
+    const total = localStorage.getItem("carritoTotal") || 0;
+    const productosJSON = localStorage.getItem("carritoProductos") || "[]";
+    const productos = JSON.parse(productosJSON);
+
+    document.getElementById("cant").textContent = cantidad;
+    document.getElementById("tot").textContent = total;
+
+    const lista = document.getElementById("lista-productos");
+
+    productos.forEach((prod) => {
+      const li = document.createElement("li");
+      li.textContent = `${prod.nombre} - $${prod.precio}`;
+      lista.appendChild(li);
+    });
+
+    const btnWsp = document.getElementById("btn-enviar-wsp");
+
+    btnWsp.addEventListener("click", () => {
+      let mensaje = "Hola, hice esta compra:%0A%0A";
+      mensaje += `Productos: ${cantidad}%0A`;
+      mensaje += `Total: $${total}%0A%0A`;
+      mensaje += "Detalle:%0A";
+
+      productos.forEach((prod, i) => {
+        mensaje += `${i + 1}. ${prod.nombre} - $${prod.precio}%0A`;
+      });
+
+      const numero = "543815665074";
+      const url = `https://wa.me/${numero}?text=${mensaje}`;
+      window.open(url, "_blank");
+    });
+  </script>
+</body>
+</html>
 
