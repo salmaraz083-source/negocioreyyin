@@ -1,125 +1,184 @@
+/* GENERAL */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: beige;
 }
-header.titulo{
-    background-color:rgb(16, 19, 102);
-    padding: 30px;
-    }
-    h1.h1{
-    margin-left: 50%;
-    color: beige;
-}
-p.alert{
-    color: red;
-    font-size: 40px;
-    margin-left: 50%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-p.alerta{
-      color: red;
-    font-size: 25px;
-    margin-left: 30%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#carrito {
-  background: #f5f5f5;
-  padding: 10px 20px;
-  text-align: right;
-  font-weight: bold;
-}
 
-#carrito button {
-  margin-left: 10px;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.contenedor-productos {
-  display: flex;
-  gap: 40px;
-}
-
-.card {
-  width: 220px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,.1);
-  padding: 16px;
+/* HEADER */
+header.titulo {
+  background-color: rgb(16, 19, 102);
+  padding: 24px;
   text-align: center;
 }
 
-.resumen-carrito {
-  padding: 20px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,.1);
-}
-a.navegador{
-   
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 20px;
-   display: inline-block;
-  background-color:cadetblue;
-  text-decoration: none;
-   color:white;
-    padding: 5px 5%;
-}
-.contenedor{
-  display: flex;
-  justify-content: center; /* centra las dos tarjetas */
-  gap: 20px;               /* separación entre tarjetas */
-  margin-top: 40px;
+header.titulo .h1 {
+  color: beige;
+  margin: 0;
+  font-size: 1.8rem;   /* más grande */
 }
 
-.tienda, .tienda1{
-    
-  max-width: 200px;
-  background-color:white;
-  padding: 0px;
-  border-radius: 15px;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+/* NAV */
+a.navegador {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 24px;
+  display: inline-block;
+  background-color: cadetblue;
+  text-decoration: none;
+  color: white;
+  padding: 10px 22px;   /* más gordito */
+  margin: 12px 16px;
+  font-size: 1rem;
 }
-.contenedor-productos {
+
+/* ALERTAS (grandes y centradas) */
+p.alert {
+  color: red;
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 12px 10px 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p.alerta {
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 6px 15px 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.main {
   display: flex;
   justify-content: center;
-  gap: 40px;          /* separación entre productos */
-  margin-top: 4px;
+  margin-top: 20px;
+  padding: 0 18px 22px;
 }
 
-.card {
-  width: 220px;       /* ancho fijo para que el texto no se desplace */
+/* TARJETA RESUMEN CARRITO */
+.resumen-carrito {
+  width: 100%;
+  max-width: 650px;
+  padding: 20px;
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,.1);
-  padding: 16px;
-  text-align: center; /* TODO centrado */
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.18);
+}
+
+.resumen-carrito p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;     /* texto más grande */
+}
+
+.resumen-carrito h3 {
+  margin: 14px 0 10px;
+  font-size: 1.3rem;
+}
+
+#lista-productos {
+  margin-left: 20px;
+  margin-bottom: 14px;
+  font-size: 1.05rem;
+}
+
+#lista-productos li {
+  margin-bottom: 5px;
+}
+
+/* BOTÓN ENVIAR WSP */
+#btn-enviar-wsp {
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: none;
+  background: #25d366; /* color WhatsApp */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#btn-enviar-wsp:hover {
+  opacity: 0.9;
+}
+
+/* CONTENEDOR TARJETAS DE PAGO */
+.contenedor-productos {
+  display: flex;
+  flex-direction: column;  /* mobile: una debajo de otra */
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin: 14px auto 28px;
+  padding: 0 18px 24px;
+}
+
+/* CARD GENÉRICA */
+.card {
+  width: 100%;
+  max-width: 320px;         /* más ancha en celus */
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.18);
+  padding: 18px;
+  text-align: center;
 }
 
 .card img {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .card h3 {
-  font-size: 25px;
-  margin: 8px 0;
+  font-size: 1.25rem;
+  margin: 10px 0;
 }
 
 .card p {
-  font-size: 18px;
-  margin: 8px 0;
+  font-size: 1rem;
+  margin: 5px 0;
 }
 
 .card .precio {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.05rem;
 }
 
+/* BOTONES DENTRO DE .card (ej: pagar) */
+.card button {
+  margin-top: 10px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: none;
+  background: #0070ba;  /* estilo Mercado Pago */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.card button:hover {
+  opacity: 0.9;
+}
+
+/* --------- ESCRITORIO / PANTALLAS GRANDES --------- */
+@media (min-width: 768px) {
+  header.titulo .h1 {
+    font-size: 2rem;
+  }
+
+  .main {
+    padding-top: 24px;
+  }
+
+  .contenedor-productos {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .card {
+    width: 280px;
+  }
+}
